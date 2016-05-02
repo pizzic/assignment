@@ -26,3 +26,4 @@ The dataset includes the following files:
 * 'CodeBook.md': Description of the variables in the data set and the steps taken to process the data.
 * 'run_analysis.R': R script file for taking the raw smartphone activity data, merging the test and training data adding the activity and subject fields and selecting only the mean and standard deviation columns and outputting the resulting data frame to data.csv.
 * 'data.csv': The processed body activity data.
+* 'datameans.csv': The mean of the body activity data by subject and activity.

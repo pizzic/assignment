@@ -47,6 +47,7 @@ run_analysis <- function () {
 	write.table(data, "data.txt", row.name=FALSE)
 
 	# Take the mean of the data for each subject/activity.
+	library(reshape2)
 	meltedData <- melt(data, id=c("subject", "activity"))	
 	datamean <- dcast(meltedData, subject + activity ~ variable, mean)
 	write.table(datamean, "datamean.txt", row.name=FALSE)

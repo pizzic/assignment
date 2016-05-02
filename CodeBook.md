@@ -37,7 +37,7 @@ There are two additional columns to indicate the subject number for each observa
 * activity (walking, walking upstairs, walking downstairs, sitting, standing, laying)
 * subject- identifier of the subject that carried out the experiment (from 1 to 30)
 
-The complete list of variables of each feature vector is:
+The complete list of variables of each feature vector in data.csv is (datamean.csv contains the same variables but the values are the averages for each subject by activity type):
 
 1. tbodyaccmeanx
 2. tbodyaccmeany

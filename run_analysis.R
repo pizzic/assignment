@@ -44,12 +44,12 @@ run_analysis <- function () {
 	data$subject <- subject$V1
 
 	# Write the resulting data frame to file.
-	write.csv(data, "data.csv")
+	write.table(data, "data.txt", row.name=FALSE)
 
 	# Take the mean of the data for each subject/activity.
 	meltedData <- melt(data, id=c("subject", "activity"))	
 	datamean <- dcast(meltedData, subject + activity ~ variable, mean)
-	write.csv(datamean, "datamean.csv")
+	write.table(datamean, "datamean.txt", row.name=FALSE)
 	
 	data
 }

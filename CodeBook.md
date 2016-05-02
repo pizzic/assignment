@@ -37,7 +37,7 @@ There are two additional columns to indicate the subject number for each observa
 * activity (walking, walking upstairs, walking downstairs, sitting, standing, laying)
 * subject- identifier of the subject that carried out the experiment (from 1 to 30)
 
-The complete list of variables of each feature vector in data.csv is (datamean.csv contains the same variables but the values are the averages for each subject by activity type):
+The complete list of variables of each feature vector in data.txt is (datamean.txt contains the same variables but the values are the averages for each subject by activity type):
 
 1. tbodyaccmeanx
 2. tbodyaccmeany
@@ -109,13 +109,13 @@ The complete list of variables of each feature vector in data.csv is (datamean.c
 68. subject
 
 ###Transformations
-To produce the data set in data.csv, the following steps were performed:
+To produce the data set in data.txt and datamean.txt, the following steps were performed:
 
 1. Merge the training and the test sets to create one data set.
 2. Extract only the measurements on the mean and standard deviation for each measurement.
 3. Assign descriptive activity names to name the activities in the data set
 4. Label the data set with descriptive variable names.
-5. Write the resulting data to data.csv.
+5. Write the resulting data to data.txt.
 6. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-7. Write the resulting data to datamean.csv.
+7. Write the resulting data to datamean.txt.
 
